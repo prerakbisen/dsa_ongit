@@ -2,7 +2,7 @@
 public class que_1 {
     public static void palin(String ...a){
         String max = "";
-        String min = "null ";
+        String min = null ;
         for(String s:a){
             if (s.length()>max.length()){
                 max = s;
@@ -18,6 +18,8 @@ public class que_1 {
     }
     public static void main(String[] args) {
         String arr[] = {"civic","madam","mom","dad","refer","noon","rotator","deed","level"};
+        String[] arr2 = {"madam","mom","dad","refer","noon","rotator","deed","level"};
         palin(arr);
+        palin(arr2);
     }
 }
