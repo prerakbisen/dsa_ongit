@@ -17,9 +17,9 @@ public class que_1 {
 
     }
     public static void main(String[] args) {
-        String arr[] = {"civic","madam","mom","dad","refer","noon","rotator","deed","level"};
+        String[] array = {"civic","madam","mom","dad","refer","noon","rotator","deed","level"};
         String[] arr2 = {"madam","mom","dad","refer","noon","rotator","deed","level"};
-        palin(arr);
+        palin(array);
         palin(arr2);
     }
 }
