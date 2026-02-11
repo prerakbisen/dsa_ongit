@@ -1,7 +1,7 @@
 public class learning_dsa_3 {
 //     Write a program to Find Transpose of a Matrix.
     public static void main(String[] args) {
-        int[][] nums = { {1,2,3},{4,5,6} };
+        int[][] nums = { {1,2,3},{4,5,6},{4,5,6},{4,5,6} };
         int a = nums[0].length;
         int b = nums.length;
         int [][] t=new int[a][b];

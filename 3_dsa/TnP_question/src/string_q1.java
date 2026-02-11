@@ -15,7 +15,7 @@ public class string_q1 {
         return true;
     }
     public static void main(String[] args) {
-        String s = "madapm";
+        String s = "madam";
         System.out.println(check_palindrome(s));
     }
 }
