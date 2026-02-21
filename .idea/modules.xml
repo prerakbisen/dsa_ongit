@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/3_dsa/TnP_question/TnP_question.iml" filepath="$PROJECT_DIR$/3_dsa/TnP_question/TnP_question.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_dsa/Learning_dsa/Learning_dsa.iml" filepath="$PROJECT_DIR$/3_dsa/Learning_dsa/Learning_dsa.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/dsa_ongit.iml" filepath="$PROJECT_DIR$/.idea/dsa_ongit.iml" />
       <module fileurl="file://$PROJECT_DIR$/3_dsa/dsa_start/dsa_start.iml" filepath="$PROJECT_DIR$/3_dsa/dsa_start/dsa_start.iml" />
     </modules>
