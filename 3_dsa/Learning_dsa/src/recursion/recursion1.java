@@ -46,11 +46,24 @@ public class recursion1 {
         return ans;
     }
 
+    //    Que 5 check sorted array
+    public static boolean isSort(int  a[], int i){
+        if(i==a.length-1){
+            return true;
+        }
+        if(a[i] > a[i+1]){
+            return  false;
+        }
+        return isSort(a,i+1);
+    }
+
 
     public static void main(String[] args) {
         inc_order(5);
+        int [] a = {1,2,3,4,5,};
         System.out.println(fac(5));
         System.out.println(sum(5));
-
+        System.out.println(fibo(5));
+        System.out.println(isSort(a,0));
     }
 }
