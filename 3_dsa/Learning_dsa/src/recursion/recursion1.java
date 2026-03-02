@@ -45,10 +45,12 @@ public class recursion1 {
         int  ans =  fibo(n-1) + fibo(n-2);
         return ans;
     }
+
+
     public static void main(String[] args) {
         inc_order(5);
         System.out.println(fac(5));
         System.out.println(sum(5));
-        System.out.println(fibo(5));
+
     }
 }
