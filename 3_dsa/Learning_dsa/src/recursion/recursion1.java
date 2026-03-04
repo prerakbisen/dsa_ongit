@@ -58,12 +58,24 @@ public class recursion1 {
     }
 
 
+// Que 6 find first occurance
+    public static int fo(int[]a, int k , int i){
+        if(i==a.length){
+            return -1;
+        }
+        if(a[i]==k){
+            return i;
+        }
+          return fo(a , k ,i+1);
+
+    }
     public static void main(String[] args) {
         inc_order(5);
-        int [] a = {1,2,3,4,5,};
+        int [] a = {1,2,3,3,4,5,};
         System.out.println(fac(5));
         System.out.println(sum(5));
         System.out.println(fibo(5));
         System.out.println(isSort(a,0));
+        System.out.println(fo(a,3,0));
     }
 }
