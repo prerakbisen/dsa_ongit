@@ -69,6 +69,32 @@ public class recursion1 {
           return fo(a , k ,i+1);
 
     }
+
+//    que 7 find  x to the power one
+    public static int pow(int x , int n){
+        if(n==1){
+            return x;
+        }
+        if(n==0){
+            return 1;
+        }
+        return x * pow(x,n-1);
+    }
+
+//    optimized que 7
+    public static int powopti(int x,int n){
+        if(n==1){
+            return x;
+        }
+        if(n==0){
+            return 1;
+        }
+        int powsq = powopti(x,n/2) * powopti(x,n/2);
+        if(n%2!=0){
+            return x * powsq;
+        }
+        return powsq;
+    }
     public static void main(String[] args) {
         inc_order(5);
         int [] a = {1,2,3,3,4,5,};
@@ -77,5 +103,7 @@ public class recursion1 {
         System.out.println(fibo(5));
         System.out.println(isSort(a,0));
         System.out.println(fo(a,3,0));
+        System.out.println(pow(3,3));
+        System.out.println(powopti(3,3));
     }
 }
