@@ -3,7 +3,7 @@ class Solution {
         long max = Long.MIN_VALUE;
         long secondMax = Long.MIN_VALUE;
         long thirdMax = Long.MIN_VALUE;
-        Arrays.sort(nums);
+        // Arrays.sort(nums);
         for (int num : nums) {
             long val = num;
 
@@ -16,12 +16,12 @@ class Solution {
                 secondMax = max;
                 max = val;
             } 
-            // else if (val > secondMax) {
-            //     thirdMax = secondMax;
-            //     secondMax = val;
-            // } else if (val > thirdMax) {
-            //     thirdMax = val;
-            // }
+            else if (val > secondMax) {
+                thirdMax = secondMax;
+                secondMax = val;
+            } else if (val > thirdMax) {
+                thirdMax = val;
+            }
         }
 
         return thirdMax == Long.MIN_VALUE ? (int) max : (int) thirdMax;
