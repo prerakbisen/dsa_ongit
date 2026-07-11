@@ -17,9 +17,10 @@ class Solution {
         for (int n : nums) {
             if (n == pmin) {
                 pmin++;
-            } else if (n > pmin) {
-                return pmin;
             }
+            //  else if (n > pmin) {
+            //     return pmin;
+            // }
         }
         
         return pmin;  
