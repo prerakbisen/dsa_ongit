@@ -1,42 +1,20 @@
 class Solution {
     public String reverseStr(String s, int k) {
-        int tk = 2*k;
-        int n = s.length();
-        StringBuilder sb = new StringBuilder("");
-        // StringBuilder temp = new StringBuilder("");
-        int i = 0;
-        while (tk <= n) {
+        char[] arr = s.toCharArray();
 
-            String sub = s.substring(i, tk);
+        for (int i = 0; i < arr.length; i += 2 * k) {
+            int left = i;
+            int right = Math.min(i + k - 1, arr.length - 1);
 
-            StringBuilder temp = new StringBuilder(sub.substring(0, k));
-            temp.reverse();
-
-            sb.append(temp);
-            sb.append(sub.substring(k));
-
-            i = tk;
-            tk += 2 * k;
-        }
-        if (i < n) {
-
-            String sub = s.substring(i);
-
-            StringBuilder temp2;
-
-            if (sub.length() >= k) {
-                temp2 = new StringBuilder(sub.substring(0, k));
-                temp2.reverse();
-
-                sb.append(temp2);
-                sb.append(sub.substring(k));
-            } else {
-                temp2 = new StringBuilder(sub);
-                temp2.reverse();
-
-                sb.append(temp2);
+            while (left < right) {
+                char temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+                left++;
+                right--;
             }
         }
-        return sb.toString();
+
+        return new String(arr);
     }
 }
